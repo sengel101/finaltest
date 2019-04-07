@@ -68,7 +68,7 @@
           if(empty($data['age'])){
               $data['age_err'] = 'Please enter age';
           } else if {
-              $data['age'] <= 0 {
+              !$data['age'] > 0 {
                   $data['age_err'] = 'Please enter a Valid age greater than 0';
               }
           }
@@ -107,7 +107,7 @@
           'email_err' => '',
           'password_err' => '',
           'confirm_password_err' => '',
-          'age' => '',
+          'age' => ''
         ];
 
         // Load view
